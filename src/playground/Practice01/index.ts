@@ -94,3 +94,20 @@ console.log(myTuple);
 
 let firstElement = myTuple[0];
 console.log(firstElement);
+
+// union 
+
+let someValue: number | string;
+someValue = 1;
+
+
+function returnNum(value: number|string){
+if(typeof value!=="string"){
+return value;
+}
+else {
+    return value;
+}
+// console.log(value)
+}
+console.log("returnNum",returnNum(someValue));
