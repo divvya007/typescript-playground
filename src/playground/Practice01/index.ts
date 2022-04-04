@@ -41,7 +41,9 @@ return books;
 const getBooks = getAllBooks()
 console.log(getBooks)
 
-function getFirstBook(books:any):void {
+type Obj = { name: string, available: boolean }
+
+function getFirstBook(books: Obj[]):void {
     let numberOfBooks: number = books.length;
     let firstAvailable: string = "";
      for(let currentBook of books){
@@ -74,4 +76,21 @@ const favoriteCategory:Category = Category.biography;
 
 console.log(favoriteCategory);
 
-console.log(Category[Category.biography])
+console.log(Category[Category.biography]);
+
+// let arrayOfString:string[] = ["hello","world"];
+let arrayOfNum : number[]= [1,2,3];
+
+console.log(arrayOfNum)
+let newArrayOfString:any[]=[1,"this","is","array"];
+console.log(newArrayOfString);
+
+// tuples 
+let myTuple : [number,string] = [0,"string"];
+console.log(myTuple);
+
+
+
+
+let firstElement = myTuple[0];
+console.log(firstElement);
