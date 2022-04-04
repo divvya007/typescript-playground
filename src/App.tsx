@@ -6,7 +6,7 @@ import './App.css';
 function App() {
 
   React.useEffect(() => {
-    let hwobj = new HelloWorld("jai sia ram");
+    let hwobj = new HelloWorld("inside useEffect");
     console.log(hwobj.message)
 
   }, [])
