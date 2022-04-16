@@ -1,20 +1,14 @@
-import React from 'react';
-import { HelloWorld } from './playground/Practice01';
-
-import './App.css';
+import { textChange } from "./chrome-utils/textChange";
 
 function App() {
-
-  React.useEffect(() => {
-    let hwobj = new HelloWorld("inside useEffect");
-    console.log(hwobj.message)
-
-  }, [])
+  function handleOnTextChange() {
+    textChange();
+  }
 
   return (
-    <div className="App">
-
-    </div>
+    <>
+      <button onClick={handleOnTextChange}>change font and color</button>
+    </>
   );
 }
 

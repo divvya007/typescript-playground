@@ -111,3 +111,20 @@ else {
 // console.log(value)
 }
 console.log("returnNum",returnNum(someValue));
+
+
+let s: string = "2";
+let n: number = 2;
+
+
+type Person = {
+    sistersName: string,
+    familyName: string
+}
+function printPerson( person: Person) {
+    console.log(`sisters name is ${person.sistersName} and family name is ${person.familyName}`)
+}
+
+printPerson({ sistersName: "abc", familyName: "abcd" });
+
+
