@@ -9,11 +9,7 @@
     "default_popup": "index.html",
     "default_title": "Click Me"
   }
-  ,
-  "background": {
-    
-    "service_worker": "src/background.ts"
-  }
+  
   ,
   "options_page": "index.html"
 
